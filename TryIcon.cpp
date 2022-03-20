@@ -1,11 +1,17 @@
-#include "widget.h"
+#include "TryIcon.h"
 
-Widget::Widget(QWidget *parent) : QWidget(parent)
+TrayIcon::TrayIcon(QWidget *parent) : QWidget(parent)
 {
 
 }
 
-Widget::~Widget()
+TrayIcon::~TrayIcon()
 {
 }
 
+int createTrayIcon()
+{
+    trayIconMenu = new QMenu(this);
+
+    trayIcon = new QSystemTrayIcon(this);
+}

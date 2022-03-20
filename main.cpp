@@ -3,7 +3,7 @@
 #ifndef QT_NO_SYSTEMTRAYICON
 
 #include <QMessageBox>
-#include "widget.h"
+#include "TryIcon.h"
 
 int main(int argc, char *argv[])
 {
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     }
     QApplication::setQuitOnLastWindowClosed(false);
 
-    Gestionnaire_son w;
+    TryIcon w;
     w.show();
     return app.exec();
 }

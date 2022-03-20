@@ -10,10 +10,10 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    widget.cpp
+    TryIcon.cpp
 
 HEADERS += \
-    widget.h
+    TryIcon.h
 
 RESOURCES = logos.qrc/
 

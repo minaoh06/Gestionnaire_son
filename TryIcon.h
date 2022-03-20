@@ -2,13 +2,21 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QSystemTrayIcon>
+#include <QMenu>
 
-class Widget : public QWidget
+class TrayIcon : public QWidget
 {
     Q_OBJECT
 
 public:
-    Widget(QWidget *parent = nullptr);
-    ~Widget();
+    TrayIcon(QWidget *parent = nullptr);
+    ~TrayIcon();
+
+private:
+    int createTrayIcon();
+
+    QSystemTrayIcon *trayIcon;
+    QMenu *trayIconMenu;
 };
 #endif // WIDGET_H
