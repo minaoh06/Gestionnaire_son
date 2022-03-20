@@ -3,11 +3,11 @@
 #ifndef QT_NO_SYSTEMTRAYICON
 
 #include <QMessageBox>
-#include "TryIcon.h"
+#include "TrayIcon.h"
 
 int main(int argc, char *argv[])
 {
-    Q_INIT_RESOURCE(Gestionnaire_son);
+    //Q_INIT_RESOURCE(Gestionnaire_son);
 
     QApplication app(argc, argv);
 
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     }
     QApplication::setQuitOnLastWindowClosed(false);
 
-    TryIcon w;
+    TrayIcon w;
     w.show();
     return app.exec();
 }

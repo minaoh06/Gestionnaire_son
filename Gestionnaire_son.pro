@@ -10,12 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    TryIcon.cpp
+    TrayIcon.cpp
 
 HEADERS += \
-    TryIcon.h
+    TrayIcon.h
 
-RESOURCES = logos.qrc/
+RESOURCES = Resources/logos.qrc/
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
