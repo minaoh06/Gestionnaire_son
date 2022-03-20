@@ -3,7 +3,7 @@
 #ifndef QT_NO_SYSTEMTRAYICON
 
 #include <QMessageBox>
-#include "gestionnaire_son.h"
+#include "widget.h"
 
 int main(int argc, char *argv[])
 {
